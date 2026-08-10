@@ -67,6 +67,16 @@ test("shows profile content, projects, and the writing empty state", async () =>
   assert.match(home, /Picture thanks to David Eirew/);
   assert.doesNotMatch(home, /Open research|Browse writing/);
   assert.doesNotMatch(home, /Built for quiet reading|©/);
+  assert.match(
+    research,
+    /Topological and Geometric Signals of Alignment Faking/,
+  );
+  assert.match(research, /BlueDot Impact/);
+  assert.match(research, /August 2026/);
+  assert.match(
+    research,
+    /Looking for topological and geometric features and characterizations associated with alignment-faking\. In progress\./,
+  );
   assert.match(research, /Optimized Persistence Distance/);
   assert.match(research, /METAGENE-1 Interpretability/);
   assert.match(research, /NSF REU/);
@@ -84,7 +94,9 @@ test("shows profile content, projects, and the writing empty state", async () =>
   assert.match(research, /Published in Broad Street Scientific 24-25/);
   assert.match(research, /broadstreetscientific\.ncssm\.edu\/archive/);
   assert.ok(
-    research.indexOf("Optimized Persistence Distance") <
+    research.indexOf("Topological and Geometric Signals of Alignment Faking") <
+      research.indexOf("Optimized Persistence Distance") &&
+      research.indexOf("Optimized Persistence Distance") <
       research.indexOf("METAGENE-1 Interpretability"),
     "projects should render newest first",
   );
@@ -112,11 +124,12 @@ test("keeps owner-editable content files in place", async () => {
 
   assert.match(site, /"bio"/);
   const researchItems = JSON.parse(research);
-  assert.equal(researchItems.length, 4);
-  assert.equal(researchItems[0].sortDate, "2026-07-01");
-  assert.equal(researchItems[1].sortDate, "2026-04-01");
-  assert.equal(researchItems[2].sortDate, "2025-05-01");
-  assert.equal(researchItems[3].sortDate, "2025-01-01");
+  assert.equal(researchItems.length, 5);
+  assert.equal(researchItems[0].sortDate, "2026-08-01");
+  assert.equal(researchItems[1].sortDate, "2026-07-01");
+  assert.equal(researchItems[2].sortDate, "2026-04-01");
+  assert.equal(researchItems[3].sortDate, "2025-05-01");
+  assert.equal(researchItems[4].sortDate, "2025-01-01");
   const generatedWritings = JSON.parse(writings);
   assert.equal(generatedWritings.length, 2);
   assert.equal(
