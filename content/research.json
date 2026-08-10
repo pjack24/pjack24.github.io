@@ -1,0 +1,82 @@
+[
+  {
+    "published": true,
+    "title": "Optimized Persistence Distance",
+    "date": "July 2026",
+    "sortDate": "2026-07-01",
+    "affiliation": "NSF REU",
+    "kind": "Project",
+    "summary": "We developed topological discrepancy measures robust to anisotropic scaling noise. Applications to neural network latent representations and geospatial data.",
+    "pdf": "",
+    "fileSize": "",
+    "links": [
+      {
+        "label": "Preprint",
+        "url": "",
+        "comingSoon": true,
+        "tooltip": "Coming soon"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "published": true,
+    "title": "METAGENE-1 Interpretability",
+    "date": "April 2026",
+    "sortDate": "2026-04-01",
+    "affiliation": "CAIAC",
+    "kind": "Project",
+    "summary": "We used sparse autoencoders (SAEs) to probe the metagenomic foundation model METAGENE-1's representations, finding organism-specific latents and linear pathogenicity separability.",
+    "pdf": "/files/metagene-1-interpretability.pdf",
+    "fileSize": "2.9 MB",
+    "links": [
+      {
+        "label": "Track feature @ Apart Research Biosecurity Hackathon",
+        "url": "https://apartresearch.com/project/sparse-autoencoder-interpretability-of-the-metagene1-genomic-foundation-model-cmuy",
+        "comingSoon": false,
+        "tooltip": ""
+      }
+    ],
+    "tags": []
+  },
+  {
+    "published": true,
+    "title": "LDP in Graph Theoretic Metric Spaces",
+    "date": "May 2025",
+    "sortDate": "2025-05-01",
+    "affiliation": "Duke/AMT",
+    "kind": "Project",
+    "summary": "Behavior of the Fréchet mean on graph theoretic metric spaces with rate functions. Mentored by Dr. Nicholas Cook.",
+    "pdf": "",
+    "fileSize": "",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "",
+        "comingSoon": true,
+        "tooltip": "Probably never"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "published": true,
+    "title": "Polyomino Tilings",
+    "date": "January 2025",
+    "sortDate": "2025-01-01",
+    "affiliation": "NCSSM",
+    "kind": "Paper",
+    "summary": "A fun AMS MM problem expanded into a short paper with friends. Research in Mathematics JTerm @ NCSSM",
+    "pdf": "/files/polyomino-tilings.pdf",
+    "fileSize": "417 KB",
+    "links": [
+      {
+        "label": "Published in Broad Street Scientific 24-25",
+        "url": "https://broadstreetscientific.ncssm.edu/archive/index.html",
+        "comingSoon": false,
+        "tooltip": ""
+      }
+    ],
+    "tags": []
+  }
+]

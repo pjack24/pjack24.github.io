@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "template",
+    "title": "Your title",
+    "date": "2026-08-10",
+    "type": "quick-take",
+    "excerpt": "A one-sentence preview of the piece.",
+    "published": false,
+    "tags": [
+      "Topic"
+    ],
+    "body": "Write your piece here in normal Markdown.\n\nStart a new paragraph by leaving a blank line. You can use **bold text**,\n*italics*, links, headings, lists, and block quotes.",
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "slug": "most-forbidden-technique-alert",
+    "title": "Most forbidden technique alert?",
+    "date": "2026-08-07",
+    "type": "quick-take",
+    "excerpt": "",
+    "published": true,
+    "tags": [],
+    "body": "",
+    "url": "https://www.lesswrong.com/posts/scG4ZHfMxciJpLGFG/peyton-jackson-s-shortform?commentId=c8motPmnvJCJELmce",
+    "linkLabel": "Read my quick take on LessWrong"
+  }
+]
