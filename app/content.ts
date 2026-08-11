@@ -33,6 +33,7 @@ export type ResearchItem = {
   kind: "Paper" | "Project" | "Talk" | "Dataset" | "Other";
   summary: string;
   pdf: string;
+  pdfLabel: string;
   fileSize: string;
   links: ResearchLink[];
   tags: string[];
@@ -128,6 +129,7 @@ export const researchItems: ResearchItem[] = (
       kind: researchKinds.has(kind) ? kind : "Other",
       summary: asString(record.summary),
       pdf: asString(record.pdf),
+      pdfLabel: asString(record.pdfLabel, "PDF"),
       fileSize: asString(record.fileSize),
       links: asLinkArray(record.links),
       tags: asStringArray(record.tags),
@@ -143,6 +145,7 @@ export const researchItems: ResearchItem[] = (
       kind: item.kind,
       summary: item.summary,
       pdf: item.pdf,
+      pdfLabel: item.pdfLabel,
       fileSize: item.fileSize,
       links: item.links,
       tags: item.tags,

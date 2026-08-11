@@ -73,6 +73,8 @@ test("shows profile content, projects, and the writing empty state", async () =>
   );
   assert.match(research, /BlueDot Impact/);
   assert.match(research, /August 2026/);
+  assert.match(research, /alignment-faking-pilot\.pdf/);
+  assert.match(research, /Pilot PDF/);
   assert.match(
     research,
     /Looking for topological and geometric features and characterizations associated with alignment-faking\. In progress\./,

@@ -53,6 +53,7 @@ Put PDFs under `public/files/`. Then add objects to `research.json`:
     "kind": "Paper",
     "summary": "One or two sentences about the work.",
     "pdf": "/files/paper-name.pdf",
+    "pdfLabel": "PDF",
     "fileSize": "1.8 MB",
     "links": [
       {
@@ -70,7 +71,8 @@ Put PDFs under `public/files/`. Then add objects to `research.json`:
 Allowed `kind` values are `Paper`, `Project`, `Talk`, `Dataset`, and `Other`.
 Keep every field in the example; use `""` for unused text and `[]` for unused
 lists. Use `sortDate` in `YYYY-MM-DD` form so published entries sort newest
-first. For an unavailable link, leave `url` empty and set `comingSoon` to
+first. Use `pdfLabel` to customize the PDF link text. For an unavailable link,
+leave `url` empty and set `comingSoon` to
 `true`. Set `tooltip` to the message shown on hover or keyboard focus; leave it
 empty to use “Coming soon.” Set `published` to `false` while an entry is still
 a draft.

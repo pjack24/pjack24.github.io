@@ -53,7 +53,8 @@ export default function ResearchPage() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      PDF{item.fileSize ? ` · ${item.fileSize}` : ""}
+                      {item.pdfLabel}
+                      {item.fileSize ? ` · ${item.fileSize}` : ""}
                       <span className="sr-only"> (opens in a new tab)</span>
                     </a>
                   )}
