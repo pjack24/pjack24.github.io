@@ -1040,6 +1040,24 @@ p {
   margin: 0 0 1.5rem;
 }
 
+.prose ul {
+  padding-left: 1.6rem;
+  list-style: disc;
+}
+
+.prose ul ul {
+  margin-top: 0.5rem;
+  list-style: circle;
+}
+
+.prose ul li {
+  padding-left: 0.25rem;
+}
+
+.prose ul li::marker {
+  color: var(--lavender);
+}
+
 .prose h2,
 .prose h3 {
   margin: 2.8rem 0 1rem;
