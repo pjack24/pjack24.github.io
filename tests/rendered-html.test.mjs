@@ -49,11 +49,14 @@ test("renders all three portfolio pages", async () => {
   }
 });
 
-test("shows profile content, projects, and the writing empty state", async () => {
-  const [home, research, writings] = await Promise.all([
+test("shows profile content, projects, and published writing", async () => {
+  const [home, research, writings, blogPost] = await Promise.all([
     render("/").then((response) => response.text()),
     render("/research").then((response) => response.text()),
     render("/writings").then((response) => response.text()),
+    render("/writings/slop-in-the-age-of-agi").then((response) =>
+      response.text(),
+    ),
   ]);
 
   assert.match(
@@ -113,6 +116,17 @@ test("shows profile content, projects, and the writing empty state", async () =>
   assert.match(writings, /August 7, 2026/);
   assert.match(writings, /Read my quick take on LessWrong/);
   assert.match(writings, /c8motPmnvJCJELmce/);
+  assert.match(writings, /Slop in the Age of AGI/);
+  assert.match(writings, /August 27, 2026/);
+  assert.ok(
+    writings.indexOf("Slop in the Age of AGI") <
+      writings.indexOf("Most forbidden technique alert?"),
+    "writing should render newest first",
+  );
+  assert.match(blogPost, /Slop in the Age of AGI/);
+  assert.match(blogPost, /August 27, 2026/);
+  assert.match(blogPost, /data-footnotes="true"/);
+  assert.match(blogPost, /id="user-content-fn-0"/);
 });
 
 test("keeps owner-editable content files in place", async () => {
@@ -133,10 +147,10 @@ test("keeps owner-editable content files in place", async () => {
   assert.equal(researchItems[3].sortDate, "2025-05-01");
   assert.equal(researchItems[4].sortDate, "2025-01-01");
   const generatedWritings = JSON.parse(writings);
-  assert.equal(generatedWritings.length, 2);
+  assert.equal(generatedWritings.length, 3);
   assert.equal(
     generatedWritings.filter((item) => item.published).length,
-    1,
+    2,
   );
   assert.match(template, /published: false/);
   assert.match(guide, /public\/files/);
