@@ -71,12 +71,15 @@ export function RouteTransition({ children }: { children: ReactNode }) {
     }
 
     function handleHistoryNavigation() {
+      const nextPath = normalizePath(window.location.pathname);
+      if (nextPath === normalizePath(pathname)) return;
+
       const currentName =
         currentPageRef.current?.querySelector<HTMLElement>("main[data-page]")
           ?.dataset.page ?? pageName(pathname);
-      const nextName = pageName(window.location.pathname);
+      const nextName = pageName(nextPath);
       prepareTransition({
-        href: window.location.pathname,
+        href: nextPath,
         direction:
           pageIndex(nextName) > pageIndex(currentName) ? "forward" : "backward",
       });
