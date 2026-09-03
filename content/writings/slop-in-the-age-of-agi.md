@@ -54,8 +54,8 @@ Overall, it's really easy to derail what you're doing and introduce a ton of con
 
 To be fair, it's well known you still have to babysit. PEBCAK is probably true for a lot of my annoyances, but it's still frustrating to exist in this purgatory where
 
-- Computer knows significantly more than I do,
 - Computer can find errors in everything I do,
+- [Computer ](https://cruxevals.com/crux/can-ai-agents-conduct-research/)[*can*](https://cruxevals.com/crux/can-ai-agents-conduct-research/)[ do basically everything, but](https://cruxevals.com/crux/can-ai-agents-conduct-research/)
 - Computer goes completely off the rails when I try to let it manage anything.
 
 This is related to my earlier remarks about anxious perfectionism. Obviously, I'm prone to errors throughout the process of working on any project, and with the aforementioned oracle that reveals a substantial number of these shortcomings (again restraining a judgement of "everything" or "all given inadequacies are valid") it is really tempting to continuously check in, especially when there is a notion of objectivity present for scientific tasks. But I'm finding that this is counterproductive both for novel insight and my intellectual development.[^0]
