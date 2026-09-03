@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { RouteTransition } from "./components/RouteTransition";
 import { SiteHeader } from "./components/SiteHeader";
 import { site } from "./content";
+import "katex/dist/katex.min.css";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";

@@ -127,6 +127,8 @@ test("shows profile content, projects, and published writing", async () => {
   assert.match(blogPost, /August 27, 2026/);
   assert.match(blogPost, /data-footnotes="true"/);
   assert.match(blogPost, /id="user-content-fn-0"/);
+  assert.match(blogPost, /class="katex"/);
+  assert.match(blogPost, /<math xmlns="http:\/\/www\.w3\.org\/1998\/Math\/MathML"/);
 });
 
 test("keeps owner-editable content files in place", async () => {

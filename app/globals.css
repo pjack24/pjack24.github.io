@@ -1101,6 +1101,74 @@ p {
   margin: 2.5rem auto;
 }
 
+.prose .katex-display {
+  max-width: 100%;
+  margin: 2rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.35rem 0;
+}
+
+.prose sup a[href^="#user-content-fn-"] {
+  font-family: var(--font-mono);
+  font-size: 0.72em;
+  text-decoration: none;
+}
+
+.prose .footnotes {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line-strong);
+  color: var(--muted);
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+
+.prose .footnotes > .sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0 0 1rem;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  white-space: normal;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.prose .footnotes ol {
+  margin: 0;
+  padding-left: 1.7rem;
+  list-style: decimal;
+}
+
+.prose .footnotes li {
+  padding-left: 0.35rem;
+}
+
+.prose .footnotes li::marker {
+  color: var(--quiet);
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.prose .footnotes li > p {
+  margin-bottom: 0.8rem;
+}
+
+.prose .footnotes a[href^="#user-content-fnref-"] {
+  margin-left: 0.15em;
+  font-family: var(--font-sans);
+  font-size: 0.85em;
+  text-decoration: none;
+}
+
 .not-found {
   min-height: 68vh;
   padding: 9rem 0;

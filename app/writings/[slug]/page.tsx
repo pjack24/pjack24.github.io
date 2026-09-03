@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
+import rehypeKatex from "rehype-katex";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 import {
   type WritingItem,
   withBasePath,
@@ -86,7 +88,8 @@ export default async function WritingPage({
         </header>
         <div className="prose">
           <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
             components={{
               a: ({ href, children }) => (
                 <a href={withBasePath(href ?? "")}>{children}</a>

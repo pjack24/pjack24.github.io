@@ -4,8 +4,7 @@ date: "2026-08-27"
 type: "blog-post"
 excerpt: "I'm sick of AI."
 published: true
-tags:
-  - "AI"
+tags: []
 ---
 
 

@@ -100,6 +100,15 @@ Write the piece below the second `---` in normal Markdown. Use `blog-post`,
 piece is ready. Each published piece gets its own shareable page and appears in
 the filtered Writings archive, newest first.
 
+Writing pages support LaTeX math. Wrap inline math in single dollar signs, such
+as `$p < 0.05$`. Put display math between double dollar signs on separate lines:
+
+```markdown
+$$
+E = mc^2
+$$
+```
+
 To link to a piece published somewhere else, add `url:` to its header and leave
 the Markdown body empty. Add `linkLabel:` when you want custom link text:
 
